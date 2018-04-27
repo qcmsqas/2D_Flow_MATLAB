@@ -1,0 +1,12 @@
+xmin=0;xmax=1;
+ymin=0;ymax=1;
+Nx=20;
+Ny=20;
+ux0=1;
+mu=1e-3;
+ro=1e3;
+tmax=100;
+dt=0.01;
+global u v us vs P Xu Yu Xv Yv Xp Yp Su Sv Sp;
+setMesh(xmin,xmax,ymin,ymax,Nx,Ny);
+solveFlow(Nx,Ny,u0,mu,ro,tmax,dt);
